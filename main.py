@@ -1,1 +1,1 @@
-print("simple interest cli")
+print("simple interest cli") 
