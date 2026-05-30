@@ -1,4 +1,4 @@
-# simple-interest-cli
+# ultimate-calculator
 
 A command-line application for calculating simple interest built with Python. A beginner-friendly project to learn fundamental Python concepts.
 
