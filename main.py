@@ -2,7 +2,7 @@
 
 print("=============THE ULTIMATE CALCULATOR=============")
 
-def normal_calculation():#NORMAL CALCULATION block.
+def normal_calculation():  # NORMAL CALCULATION block.
     print("\n=============CALCULATOR============")
     print("\nSelect what you want to perform....")
     print("1.<ADDITION>")
@@ -51,18 +51,18 @@ def normal_calculation():#NORMAL CALCULATION block.
     print("=============================\n")
     input("\nPress Enter to return to MENU....")
 
-def calculate():#SIMPLE INTEREST block.
+def calculate():  # SIMPLE INTEREST block.
     while True:   
         try:
-           P = float(input("\nEnter your Principal: "))
-           R = float(input("\nEnter your rate: "))
-           T = float(input("\nEnter your time: "))
-           break
+            P = float(input("\nEnter your Principal: "))
+            R = float(input("\nEnter your rate: "))
+            T = float(input("\nEnter your time: "))
+            break
         except ValueError:
             print("\nInvalid input...please enter a number...")
             continue
 
-    interest = (P*T*R)/100
+    interest = (P * T * R) / 100
     total_amount = P + interest
 
     print("\n========RESULTS========")
@@ -71,25 +71,26 @@ def calculate():#SIMPLE INTEREST block.
     
     input("\nPress Enter to return to MENU....")
 
-def menu():#MENU block.
+def menu():  # MENU block.
     while True:
         print("\nMENU")
         print("\n1.Normal calculator.")
-        print("\n2.simple interest.")#calulates the interest form the users data.
+        print("\n2.simple interest.")  # calculates the interest from the users data.
         print("\n3.exit.")
         
         try:
-            action=int(input("\nEnter what you want to calculate: "))
+            action = int(input("\nEnter what you want to calculate: "))
         except ValueError:
             print("\nInvalid input...please enter a number! ")
             continue
-        if action==1:
+        if action == 1:
             normal_calculation()
-        elif action==2:
+        elif action == 2:
             calculate()
-        elif action==3:
+        elif action == 3:
             print("Exiting....")
             break
         else:
             print("Enter valid operation...")
+
 menu()
