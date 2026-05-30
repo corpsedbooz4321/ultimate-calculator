@@ -72,12 +72,12 @@ def calculate():#SIMPLE INTEREST block.
     input("\nPress Enter to return to MENU....")
 
 def menu():#MENU block.
-    print("\nMENU")
-    print("\n1.Normal calculator.")
-    print("\n2.simple interest.")#calulates the interest form the users data.
-    print("\n3.exit.")
-    
     while True:
+        print("\nMENU")
+        print("\n1.Normal calculator.")
+        print("\n2.simple interest.")#calulates the interest form the users data.
+        print("\n3.exit.")
+        
         try:
             action=int(input("\nEnter what you want to calculate: "))
         except ValueError:
