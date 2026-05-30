@@ -1,34 +1,49 @@
 #Simple interest calculator.
 
 print("=============THE ULTIMATE CALCULATOR=============")
-
-def normal():
+def taking_input():#INPUT BLOCK FOR THE NORMAL CALCULATOR.
     while True:
-        print("\n1.ADDITION➕")
-        print("2.SUBSTRACTION➖")
-        print("3.MULTIPLICATION❌")
-        print("4.DIVISION➗")
+        try:      
+            F = float(input("\nEnter your first Number: "))
+            S = float(input("\nEnter your second Number: "))
+            return F, S
+        except ValueError:
+            print("\nEnter a valid number.....(again try using your 🧠)")
+            continue
+def normal():#CALCULATION BLOCK.
+    while True:
+        try:
+           print("\n1.ADDITION➕")
+           print("2.SUBSTRACTION➖")
+           print("3.MULTIPLICATION❌")
+           print("4.DIVISION➗")
+           print("\nPress 5 to go to main menu")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+           action = int(input("\n=======Choose the operation from above list[1 to 4]: "))
+        
+        except ValueError:
+            print("\nEnter a valid input....try using integers or (your 🧠❗)")
+            continue
+            
+        if action==1:
+            print("\nPerforming Addition.🧐")
+            F, S = taking_input()
+            print("=====RESULT====:",F + S)
+        elif action==2:
+            print("\nPerforming Substrction.🧐")
+            F, S = taking_input()
+            print("=====RESULT====:",F - S)
+        elif action==3:
+            print("\nPerforming Multiplication.🧐")
+            F, S = taking_input()
+            print("=====RESULT====:",F * S)
+        elif action==4:
+            print("\nPerforming Division.🧐")
+            F, S = taking_input()
+            print("=====RESULT====:",F / S)
+        else:
+            print("Press Enter to return to the main MENU...")
+            menu()
 def calculate():  # SIMPLE INTEREST block.
     while True:
         print("\n😎.Calculating Simple Interst.")   
@@ -40,30 +55,25 @@ def calculate():  # SIMPLE INTEREST block.
         except ValueError:
             print("\nInvalid input...please enter a number...")
             continue
-
     interest = (P * T * R) / 100
     total_amount = P + interest
-
     print("\n========RESULTS========")
     print(f"Calculated interest: {interest}")    
     print(f"Total amount: {total_amount}")
-    
     input("\nPress Enter to return to MENU....")
-
 def menu():  # MENU block.
     while True:
         print("\nMENU")
         print("\n1.Normal calculator.")
         print("\n2.simple interest.")  # calculates the interest from the users data.
         print("\n3.exit.")
-        
         try:
-            action = int(input("\nEnter what you want to calculate: "))
+            action = int(input("\nChoose the tool you need: "))
         except ValueError:
             print("\nInvalid input...try integers.(if you have 🧠!)")
             continue
         if action == 1:
-            Normal()
+            normal()
         elif action == 2:
             calculate()
         elif action == 3:
@@ -72,3 +82,4 @@ def menu():  # MENU block.
         else:
             print("Enter valid operation...")
 menu()
+#End of the code!
