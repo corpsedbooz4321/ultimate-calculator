@@ -15,7 +15,7 @@ def calculate():
     print(f"Total amount: {total_amount}")
 
 def menu():
-    print("\n=============select what you want to perform")
+    print("\n=============select what you want to perform============")
     print("\n1. To calculate simple interest")
     print("\n2. To exit")
     
