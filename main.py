@@ -13,13 +13,13 @@ def taking_input():#INPUT BLOCK FOR THE NORMAL CALCULATOR.
 def normal():#CALCULATION BLOCK.
     while True:
         try:
-           print("\n1.ADDITION➕")
-           print("2.SUBSTRACTION➖")
-           print("3.MULTIPLICATION❌")
-           print("4.DIVISION➗")
-           print("\nPress 5 to go to main menu")
+           print("\n1.Addition.")
+           print("2.Substraction.")
+           print("3.Multiplication.")
+           print("4.Division.")
+           print("\nPress 5 to go to main menu...")
 
-           action = int(input("\n=======Choose the operation from above list[1 to 4]: "))
+           action = int(input("\nChoose the operation from above list[1 to 4]: "))
         
         except ValueError:
             print("\nEnter a valid input....try using integers or (your 🧠❗)")
