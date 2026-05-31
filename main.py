@@ -17,9 +17,9 @@ def normal():#CALCULATION BLOCK.
            print("2.Substraction.")
            print("3.Multiplication.")
            print("4.Division.")
-           print("\nPress 5 to go to main menu...")
+           print("5.To return to menu.")
 
-           action = int(input("\nChoose the operation from above list[1 to 4]: "))
+           action = int(input("\nChoose the operation from above list[1 to 5]: "))
         
         except ValueError:
             print("\nEnter a valid input....try using integers or (your 🧠❗)")
@@ -46,7 +46,8 @@ def normal():#CALCULATION BLOCK.
             menu()
 def calculate():  # SIMPLE INTEREST block.
     while True:
-        print("\n😎.Calculating Simple Interst.")   
+        print("\n😎.Calculating Simple Interst.")
+        print("")   
         try:
             P = float(input("\nEnter your Principal: "))
             R = float(input("\nEnter your rate: "))
@@ -61,6 +62,8 @@ def calculate():  # SIMPLE INTEREST block.
     print(f"Calculated interest: {interest}")    
     print(f"Total amount: {total_amount}")
     input("\nPress Enter to return to MENU....")
+    print("\nPress 5 to return to the main menu...")
+    menu()
 def menu():  # MENU block.
     while True:
         print("\nMENU")
