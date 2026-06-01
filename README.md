@@ -1,3 +1,29 @@
+As of now the project is in maintainence mode so for some days there won't be any realeases. will be improving some UI and better robust handling.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # ultimate-calculator
 
 A command-line application for calculating simple interest built with Python. A beginner-friendly project to learn fundamental Python concepts.
