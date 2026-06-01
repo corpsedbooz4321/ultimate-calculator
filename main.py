@@ -10,7 +10,7 @@ def taking_input():#INPUT BLOCK FOR THE NORMAL CALCULATOR.
         except ValueError:
             print("\nEnter a valid number.....(again try using your 🧠)")
             continue
-def normal():#CALCULATION BLOCK.
+def normal():#CALCULATION BLOCK..
     while True:
         try:
            print("\n1.Addition.")
