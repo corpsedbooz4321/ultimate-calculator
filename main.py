@@ -26,19 +26,19 @@ def normal():#CALCULATION BLOCK..
             continue
             
         if action==1:
-            print("\nPerforming Addition.🧐")
+            print("\noperation addition....🧐")
             F, S = taking_input()
             print("=====RESULT====:",F + S)
         elif action==2:
-            print("\nPerforming Substrction.🧐")
+            print("\noperation addition....🧐")
             F, S = taking_input()
             print("=====RESULT====:",F - S)
         elif action==3:
-            print("\nPerforming Multiplication.🧐")
+            print("\noperation addition....🧐")
             F, S = taking_input()
             print("=====RESULT====:",F * S)
         elif action==4:
-            print("\nPerforming Division.🧐")
+            print("\noperation addition....🧐")
             F, S = taking_input()
             print("=====RESULT====:",F / S)
         else:
