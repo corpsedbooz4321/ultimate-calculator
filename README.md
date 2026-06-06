@@ -69,11 +69,11 @@ A command-line application for calculating simple interest built with Python. A 
    - Easy-to-read output layout
 
 ### 📋 Current Working Features
-- ✅ Simple Interest Calculator (fully functional)
-- ✅ Menu-driven interface with proper flow
-- ✅ Input validation and error handling
-- ✅ Exit option with graceful termination
-- ⏳ Normal calculator (in development)
+- ✅ **Normal Calculator:** Addition, Subtraction, Multiplication, Division.
+- ✅ **Simple Interest Calculator:** Precise calculations with Principal, Rate, and Time.
+- ✅ **Menu-driven Interface:** User-friendly navigation with non-recursive loops.
+- ✅ **Robust Error Handling:** Protection against invalid inputs and Division by Zero.
+- ✅ **Exit Option:** Graceful termination of the application.
 
 ## How to Use
 

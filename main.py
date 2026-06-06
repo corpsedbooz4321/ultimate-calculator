@@ -30,20 +30,25 @@ def normal():#CALCULATION BLOCK..
             F, S = taking_input()
             print("=====RESULT====:",F + S)
         elif action==2:
-            print("\noperation addition....🧐")
+            print("\noperation subtraction....🧐")
             F, S = taking_input()
             print("=====RESULT====:",F - S)
         elif action==3:
-            print("\noperation addition....🧐")
+            print("\noperation multiplication....🧐")
             F, S = taking_input()
             print("=====RESULT====:",F * S)
         elif action==4:
-            print("\noperation addition....🧐")
+            print("\noperation division....🧐")
             F, S = taking_input()
-            print("=====RESULT====:",F / S)
+            if S == 0:
+                print("Error: Division by zero is not allowed. (try using 🧠)")
+            else:
+                print("=====RESULT====:",F / S)
+        elif action==5:
+            print("Returning to main menu...")
+            return
         else:
-            print("Press Enter to return to the main MENU...")
-            menu()
+            print("Invalid selection. Try again.")
 def calculate():  # SIMPLE INTEREST block.
     while True:
         print("\n😎.Calculating Simple Interst.")
@@ -62,8 +67,7 @@ def calculate():  # SIMPLE INTEREST block.
     print(f"Calculated interest: {interest}")    
     print(f"Total amount: {total_amount}")
     input("\nPress Enter to return to MENU....")
-    print("\nPress 5 to return to the main menu...")
-    menu()
+    return
 def menu():  # MENU block.
     while True:
         print("\nMENU")
